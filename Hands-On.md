@@ -14,7 +14,7 @@ Note: Run the commands in PowerShell
 .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094,localhost:9095
 ```
 
-## delete topics
+## Delete topics
 
 ``` powershell
 .\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
@@ -37,3 +37,18 @@ Increasing the amount of partition increases the topic's read and write capabili
 ``` powershell
 .\bin\windows\kafka-topics.bat --alter --topic chat --bootstrap-server localhost:9094 --partitions 3
 ```
+
+## Visualize topics, partitions and replications
+
+With Offset Explorer:
+
+![Visualize Kafka Cluster](./imgs/handson-visualize-cluster-offsetexplorer.PNG)
+
+With command:
+
+``` powershell
+.\bin\windows\kafka-topics.bat --describe --topic chat --bootstrap-server localhost:9094
+```
+
+![Visualize](./imgs/handson-visualize-cluster-from-terminal.PNG)
+
