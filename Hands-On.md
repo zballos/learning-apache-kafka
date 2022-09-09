@@ -85,3 +85,14 @@ With command:
 
 ![Consuming](./imgs/handson-consuming-dammed-messages-wth-properties.PNG)
 
+### Dammed messages with properties by consumer group
+
+To defining groups, set command `--group grou-name`, example:
+
+``` powershell
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group group1
+```
+
+In the image below, I simulated a producer with three instances of consumers in two groups. Messages are consumed balancing across groups.
+
+![Consuming](./imgs/handson-consuming-dammed-messages-with-groups-of-consumers.PNG)
