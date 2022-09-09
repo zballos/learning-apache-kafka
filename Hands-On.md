@@ -52,3 +52,36 @@ With command:
 
 ![Visualize](./imgs/handson-visualize-cluster-from-terminal.PNG)
 
+## Publishing messages
+
+``` powershell
+.\bin\windows\kafka-console-producer.bat --topic chat --bootstrap-server localhost:9094 
+> Message one
+> Message two
+> Message Three
+```
+
+## Consuming messages
+
+### Real-time
+
+``` powershell
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094
+```
+
+### Dammed messages
+
+``` powershell
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning
+```
+
+![Consuming](./imgs/handson-consuming-dammed-messages.PNG)
+
+### Dammed messages with properties
+
+``` powershell
+.\bin\windows\kafka-console-consumer.bat --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true
+```
+
+![Consuming](./imgs/handson-consuming-dammed-messages-wth-properties.PNG)
+
