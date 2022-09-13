@@ -21,3 +21,7 @@ Run, with docker installed, `docker-compose up -d` using `docker-compose.yml` wh
 ## Hands-On
 
 In [hands-on](./Hands-On.md) I learned how to create, list and delete topics, configuring partitions and replication in brokers.
+
+## Schema Registry
+
+This page shows how to use [Schema Registry](./SchemaRegistry.md).
