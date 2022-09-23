@@ -1,4 +1,4 @@
-﻿namespace SerializerAndDeserializer
+﻿namespace Core
 {
     public static class KafkaConstants
     {

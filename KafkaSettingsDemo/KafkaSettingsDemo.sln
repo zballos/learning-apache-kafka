@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializerAndDeserializer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{B67A1489-6989-48CE-909F-0CE114046E8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerAck", "ProducerAck\ProducerAck.csproj", "{EFD33ACB-2FC0-4620-815D-8230F6F807DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B67A1489-6989-48CE-909F-0CE114046E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67A1489-6989-48CE-909F-0CE114046E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67A1489-6989-48CE-909F-0CE114046E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD33ACB-2FC0-4620-815D-8230F6F807DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD33ACB-2FC0-4620-815D-8230F6F807DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD33ACB-2FC0-4620-815D-8230F6F807DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD33ACB-2FC0-4620-815D-8230F6F807DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
